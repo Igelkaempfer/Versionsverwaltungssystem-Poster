@@ -1,0 +1,200 @@
+% !TEX TS-program = pdflatex
+% !TEX encoding = UTF-8 Unicode
+
+% This is a simple template for a LaTeX document using the "article" class.
+% See "book", "report", "letter" for other types of document.
+
+\documentclass[12pt]{article} % use larger type; default would be 10pt
+\RequirePackage{multicol}
+\columnsep=30mm
+
+
+
+\usepackage[utf8]{inputenc} % set input encoding (not needed with XeLaTeX)
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+
+
+\renewcommand{\Huge}{\fontsize{78}{46}\selectfont}
+\renewcommand{\huge}{\fontsize{48}{48}\selectfont}
+\renewcommand{\Large}{\fontsize{30}{30}\selectfont}
+\renewcommand{\large}{\fontsize{22}{22}\selectfont}
+%%% Examples of Article customizations
+% These packages are optional, depending whether you want the features they provide.
+% See the LaTeX Companion or other references for full information.
+
+%%% PAGE DIMENSIONS
+\usepackage{geometry} % to change the page dimensions
+\geometry{a1paper} % or letterpaper (US) or a5paper or....
+\geometry{margin=2in} % for example, change the margins to 2 inches all round
+\geometry{voffset=-4cm} % for example, change the margins to 2 inches all round
+% \geometry{landscape} % set up the page for landscape
+%   read geometry.pdf for detailed page layout information
+
+\usepackage{graphicx} % support the \includegraphics command and options
+\usepackage[font={large,sf}]{caption}
+\renewcommand{\figurename}{Abb.}
+% \usepackage[parfill]{parskip} % Activate to begin paragraphs with an empty line rather than an indent
+
+%%% PACKAGES
+\usepackage{booktabs} % for much better looking tables
+\usepackage{array} % for better arrays (eg matrices) in maths
+\usepackage{paralist} % very flexible & customisable lists (eg. enumerate/itemize, etc.)
+\usepackage{verbatim} % adds environment for commenting out blocks of text & for better verbatim
+\usepackage{subfig} % make it possible to include more than one captioned figure/table in a single float
+% These packages are all incorporated in the memoir class to one degree or another...
+
+%%% HEADERS & FOOTERS
+\usepackage{fancyhdr} % This should be set AFTER setting up the page geometry
+\pagestyle{fancy} % options: empty , plain , fancy
+\renewcommand{\headrulewidth}{0pt} % customise the layout...
+\lhead{}\chead{}\rhead{}
+\lfoot{Hallo}\cfoot{\thepage}\rfoot{}
+\renewcommand{\footrulewidth}{2pt}
+
+%%% SECTION TITLE APPEARANCE
+\usepackage{sectsty}
+\allsectionsfont{\sffamily\mdseries\upshape} % (See the fntguide.pdf for font help)
+% (This matches ConTeXt defaults)
+
+%%%%%%%%%%%%%%%%%
+
+
+%%% ToC (table of contents) APPEARANCE
+\usepackage[nottoc,notlof,notlot]{tocbibind} % Put the bibliography in the ToC
+\usepackage[titles,subfigure]{tocloft} % Alter the style of the Table of Contents
+\renewcommand{\cftsecfont}{\rmfamily\mdseries\upshape}
+\renewcommand{\cftsecpagefont}{\rmfamily\mdseries\upshape} % No bold!
+
+%%% END Article customizations
+
+%%% The "real" document content comes below...
+
+%-- einige THB-Poster-Sachen
+\RequirePackage{color}%
+\definecolor{fhborange}{cmyk}{0,0.5,1.0,0}
+\definecolor{fhbwhite}{rgb}{1.0,1.0,1.0}
+
+
+
+
+\begin{document}
+\sf
+\begin{minipage}[b]{12cm}
+    \vspace{0mm}	
+    	\hspace{-50mm}	
+      \includegraphics[height=83mm]{2015_10_05_THB_FB-W_Logo_RGB}
+    %\epsfig{file=FHB_Logo.eps,height=6cm}
+\end{minipage}
+\begin{minipage}{480mm}
+    \vspace{-30mm}	 
+    	\hspace{-20mm}	
+    \color{fhborange}\rule{550mm}{35mm}
+\end{minipage}
+
+\vspace{-5mm}
+
+ \begin{minipage}[b]{450mm}
+     \hspace{-30mm}	
+     \vspace{-25mm}
+      \color{fhborange}\rule{580mm}{90mm}
+     \vspace{-60mm}	 \\
+     	
+      \color{fhbwhite}{\Huge 
+Projektstudium 2022
+\\ \huge 
+Projektbetreuer*innen: \\Michael Höding, Kai Jander, Olga Levina, André Nitze
+}
+\end{minipage}
+ 
+\vspace{4cm}	
+\begin{multicols}{3}
+\large
+\sf
+
+%%Hier startet der Posterinhalt
+\section{Das Projektstudium in der WI, dem tollsten Jahrgang aller Zeiten}
+Das Projektstudium Wirtschaftsinformatik wird im ersten Studienjahr angeboten. Es dient sowohl der Vermittlung fachlicher als auch überfachlicher Kompetenzen. 
+
+Zum einen werden die Techniken des wissenschaftlichen Arbeitens vertieft. 
+Hierbei werden sehr unterschiedlichen Themen aus dem weiten Spektrum der Wirtschaftsinformatik bearbeitet. 
+
+
+Zum einen werden die Techniken des wissenschaftlichen Arbeitens vertieft. 
+Hierbei werden sehr unterschiedlichen Themen aus dem weiten Spektrum der Wirtschaftsinformatik bearbeitet. 
+
+Zum einen werden die Techniken des wissenschaftlichen Arbeitens vertieft. 
+Hierbei werden sehr unterschiedlichen Themen aus dem weiten Spektrum der Wirtschaftsinformatik bearbeitet. 
+
+Zum anderen werden durch Gruppenarbeit Fähigkeiten wie Kooperation und Kommunikation, Zeitmanagement und  Projektorganisation entwickelt. 
+
+Im Projektstudium sind mehrere Professoren und Mitarbeiter des WI-Kollegiums als Auftraggeber und Betreuer aktiv und ermöglichen so einen integrierten Einstieg in das Studium.
+
+Im Rahmen der Abschlussveranstaltung wird der wissenschaftliche Austausch gepflegt.
+
+%
+Das Projektstudium dient der Übung und Vertiefung zum Themengebiet wissenschaftliches Arbeitem. Besonderheiten sind 
+\begin{itemize}
+\item Werkstattarbeit in Projektgruppe, 
+\item Abschlußpräsentationen im Großen Hörsaal, 
+\item Poster-Ausstellung
+\end{itemize}
+Ein weiteres Ergebnis soll die Erstellung einer gemeinsamen Bibliography mit Citavi sein.
+
+%
+%
+%\noindent\begin{minipage}[h]{14cm}
+% \centering
+%   \includegraphics[width=.8\textwidth]{lernkurve.png}
+%\end{minipage}
+%\begin{center}{A graphic that needs to span two columns of text.}\end{center}
+%
+
+
+
+\vspace{1mm}
+\noindent
+\begin{minipage}[h]{14cm}
+ \centering
+   \includegraphics[width=14cm]{FotoLevina}
+\captionof{figure}{Projekt WOM}
+\end{minipage}
+Daher wollen wir uns mit der Frage auseinandersetzten wie sinnvoll ein Community-Feedback-System für die THB Campus APP ist und welche Verbesserungen man implementieren könnte. Dieses Ziel errei\-chen wir indem wir die bestehende APP analysieren und Umfragen bezüglich Bewertung und Verbesserungvorschläge erstellen. 
+
+
+
+
+\begin{thebibliography}{99}
+\bibitem{SZG}
+A.~Picot, S.~Zahedani, A.~Ziemer: Spielend die Zukunft gewinnen (2008)
+\bibitem{stat}
+Bundesverband Interaktive Unterhaltungssoftware e. V.: biu-online.de
+\bibitem{SK}
+Sparkassen Planspiel Börse: www.planspiel-boerse.de
+\bibitem{FHB}
+Modulkatalog des Studiengang Wirtschaftsinformatik:\\
+http://fbwcms.fh-brandenburg.de/de/6230
+\end{thebibliography}
+
+
+\end{multicols} 
+
+\lfoot{
+\Large Dieses Poster ist im Rahmen der Lehrveranstaltung \emph{Projektstudium -
+Wissenschaftliches Arbeiten} im Sommersemester 2022 entstanden.
+\vspace{1cm}\\
+\begin{minipage}[b]{20 cm} 
+\sffamily\fontsize{30}{30}\selectfont
+Ihr Kontakt: Prof. Dr. Michael Höding \\
+TH Brandenburg, Postfach 2132\\
+D-14737 Brandenburg, Germany\\E-Mail: \texttt{hoeding@th-brandenburg.de}
+\end{minipage}
+\begin{minipage}[b]{13 cm}
+.
+\end{minipage}
+\begin{minipage}[b]{15 cm}
+\sffamily\fontsize{20}{10}\selectfont
+.der zweite Punkt
+\end{minipage}
+}
+\end{document}
