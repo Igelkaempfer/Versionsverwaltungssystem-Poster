@@ -58,13 +58,14 @@
 % (This matches ConTeXt defaults)
 
 %%%%%%%%%%%%%%%%%
-
+\usepackage{adjustbox}
 
 %%% ToC (table of contents) APPEARANCE
 \usepackage[nottoc,notlof,notlot]{tocbibind} % Put the bibliography in the ToC
 \usepackage[titles,subfigure]{tocloft} % Alter the style of the Table of Contents
 \renewcommand{\cftsecfont}{\rmfamily\mdseries\upshape}
 \renewcommand{\cftsecpagefont}{\rmfamily\mdseries\upshape} % No bold!
+\usepackage{titlesec}
 
 %%% END Article customizations
 
@@ -75,11 +76,9 @@
 \definecolor{fhborange}{cmyk}{0,0.5,1.0,0}
 \definecolor{fhbwhite}{rgb}{1.0,1.0,1.0}
 
-
-
-
 \begin{document}
 \sf
+\titleformat*{\subsection}{\sffamily\normal\bfseries}
 \begin{minipage}[b]{12cm}
     \vspace{0mm}	
     	\hspace{-50mm}	
@@ -107,7 +106,7 @@ Projektbetreuer*innen: \\Michael Höding, Ralf Teusner
 }
 \end{minipage}
  
-\vspace{4cm}	
+\vspace{4cm}
 \begingroup
 \sf
 \large
@@ -124,56 +123,64 @@ Zum anderen werden durch Gruppenarbeit Fähigkeiten wie Kooperation und Kommunik
 \begin{minipage}[t]{0.32\textwidth}
 
 %Platz für erste LeitFrage
-\section{Was sind Branching-Strategien?}
-Branching-Strategien definieren strukturierte Vorgehensweisen zur Erstellung, Pflege und Zusammenführung paralleler Entwicklungszweige in Versionsverwaltungssystemen.
-Sie steuern, wie Teams neue Features entwickeln, Fehler beheben oder Releases vorbereiten, ohne Code-Stabilität zu gefährden.
-Sauber definierte Branch-Modelle reduzieren Konflikte, beschleunigen Reviews und erhöhen Nachvollziehbarkeit.
-Typische Ansätze sind Feature Branching, GitFlow, Trunk-Based Development und Release-Branches.
-
-% ... (Der zweite Teil des Inhalts) ...
-\section{Gitflow}
-Git Flow ist ein robustes Branching-Modell, das auf Git basiert und einen strikten Rahmen für die Verwaltung von Projektreleases bietet.
-Es definiert fünf Haupt-Branch-Typen mit spezifischen Aufgaben und Lebenszyklen: 
-\begin{itemize}
-\item main (oder master): Enthält den produktionsreifen Code. 
-\item develop: Integriert die neuesten fertigen Features für den nächsten Release. 
-\item feature Branches: Dienen der Entwicklung neuer Funktionalitäten und basieren auf develop. 
-\item release Branches: Werden zur Vorbereitung eines neuen Releases von develop erstellt (Bugfixes, Metadaten-Updates)
-\item hotfix Branches: Werden direkt von main erstellt, um kritische Fehler in der Produktion schnell zu beheben
-\end{itemize}
-\section{Trunk-Based Development}
+\section{GIT und Branching-Strategien}
+%Branching-Strategien definieren strukturierte Vorgehensweisen zur Erstellung, Pflege und %Zusammenführung paralleler Entwicklungszweige in Versionsverwaltungssystemen.
+%Sie steuern, wie Teams neue Features entwickeln, Fehler beheben oder Releases vorbereiten, %ohne Code-Stabilität zu gefährden.
+%Sauber definierte Branch-Modelle reduzieren Konflikte, beschleunigen Reviews und erhöhen %Nachvollziehbarkeit.
+%Typische Ansätze sind Feature Branching, GitFlow, Trunk-Based Development und Release-Branches.
+%\end{itemize}
+\subsection{Trunk-Based Development}
 Trunk-Based Development ist ein agiler Ansatz, bei dem alle Entwickler kontinuierlich in einen gemeinsamen Hauptzweig
 („Trunk“) integrieren. Änderungen werden in kleinen, häufigen Commits vorgenommen, wodurch Merge-Konflikte reduziert
 und die Software stets in einem lauffähigen Zustand gehalten wird. Feature-Flags ermöglichen das schrittweise Aktivieren neuer Funktionen.
 Dieser Ansatz fördert schnelle Feedbackzyklen, höhere Codequalität und eine stabilere Release-Pipeline.
-\end{minipage}%
-\hspace{0.02\textwidth}% Ein kleiner horizontaler Abstand zwischen den Spalten (2% der Textbreite)
-\begin{minipage}[t]{0.32\textwidth}
-%% Inhalt der dritten Spalte hier einfügen
-\section{Feature Branching}
+\includegraphics[height=70mm, width=1.0\textwidth, keepaspectratio=false]{Trunk-Based-Development}
+\subsection{Feature Branching}
 Feature Branching ist eine gängige Strategie in der Versionskontrolle (z.B. Git), 
 bei der Entwickler für jede neue Funktion, Fehlerbehebung oder jedes Experiment einen separaten Branch von der Hauptentwicklungslinie erstellen. 
 Dadurch wird die Isolation des Codes gewährleistet. Die Arbeit kann unabhängig und ohne Risiko, die stabile Hauptversion zu beeinträchtigen, durchgeführt werden.
 Erst nach Fertigstellung und erfolgreicher Überprüfung wird der Feature Branch wieder in den Main Branch zusammengeführt.
-\section{Forking Workflow}
+\includegraphics[height=130mm, width=1.1\textwidth, keepaspectratio=false]{feature-branched-development}
+\end{minipage}
+\hspace{0.02\textwidth}% Ein kleiner horizontaler Abstand zwischen den Spalten (2% der Textbreite)
+\begin{minipage}[t]{0.32\textwidth}
+%% Inhalt der dritten Spalte hier einfügen
+%\section{Feature Branching}
+%Feature Branching ist eine gängige Strategie in der Versionskontrolle (z.B. Git), 
+%bei der Entwickler für jede neue Funktion, Fehlerbehebung oder jedes Experiment einen separaten Branch von %der Hauptentwicklungslinie erstellen. 
+%Dadurch wird die Isolation des Codes gewährleistet. Die Arbeit kann unabhängig und ohne Risiko, die %stabile Hauptversion zu beeinträchtigen, durchgeführt werden.
+%Erst nach Fertigstellung und erfolgreicher Überprüfung wird der Feature Branch wieder in den Main Branch %zusammengeführt.
+\subsection{Forking Workflow}
 Der Forking-Workflow unterscheidet sich fundamental von anderen Arbeitsweisen, da er keine Schreibrechte für alle Entwickler auf einem zentralen Repository voraussetzt.
 Stattdessen erstellt jeder Beteiligte eine serverseitige Kopie (Fork) des Projekts. Dieses Modell hat sich als De-facto-Standard in der Open-Source-Entwicklung etabliert,
 da es eine sichere Zusammenarbeit ohne zentrale Verwaltung von Zugriffsrechten ermöglicht. 
 Dabei fungieren eine oder mehrere vertrauenswürdige Personen (Maintainer) als „Gatekeeper“. Nur sie besitzen die Berechtigung,
 Änderungen in das offizielle Hauptrepository zu integrieren, wodurch eine klare Hierarchie und Qualitätssicherung gewährleistet wird.
+\includegraphics[height=110mm, width=1.0\textwidth, keepaspectratio=false]{github1}
+\section{Wie beeinflussen unterschiedliche Branching-Strategien die Softwarequalität?}
 \noindent
 \begin{minipage}[h]{\textwidth} % Beachten Sie, dass \textwidth hier 0.32\textwidth entspricht
  \centering
-   \includegraphics[width=\textwidth]{github1}
 \end{minipage}
-\section{Wie beeinflussen unterschiedliche Branching-Strategien die Softwarequalität, insbesondere im Hinblick auf Fehlerhäufigkeit, Code-Stabilität und Merge-Konflikte?}
-\noindent
-\begin{minipage}[h]{\textwidth} % Beachten Sie, dass \textwidth hier 0.32\textwidth entspricht
- \centering
-   \includegraphics[width=\textwidth]{Tabelle}
+ \includegraphics[height=190mm, width=1.0\textwidth, keepaspectratio=false] {Tabelle}
 \end{minipage}
-\end{minipage}
-% ... (Der dritte Teil des Inhalts) ...
+%\vspace{8cm} % Füge denselben Abstand wie vor der dritten Spalte ein, um sicherzustellen, dass die minipages auf derselben vertikalen Höhe beginnen. Du musst diesen Wert eventuell anpassen.
+\hspace{0.34\textwidth} % Dies springt über die erste Spalte (0.32\textwidth) plus den ersten Abstand (0.02\textwidth) hinweg.
+%\begin{minipage}[t]{0.34\textwidth} % Diese minipage hat dieselbe Breite wie die Spalten 
+ %% Inhalt der minipage hier einfügen
+ %\hspace{-5mm}
+ %\begin{minipage}[b]{250mm}
+     %\hspace{-20mm}	
+     %\vspace{-20mm}
+     %\vspace{-50mm}	 \\
+
+%\section{Wie beeinflussen unterschiedliche Branching-Strategien die Softwarequalität, insbesondere im Hinblick auf Fehlerhäufigkeit, Code-Stabilität und Merge-Konflikte?}
+%\end{minipage}
+ %includegraphics[height=130mm, width=1.6\textwidth, keepaspectratio=false]{Tabelle}
+ %\centering % Zentriere den Inhalt (z.B. das Bild) innerhalb dieser minipage
+  % Verwende \captionof, da du nicht in einer float-Umgebung bist
+  %\hspace{0.02\textwidth}% Ein kleiner horizontaler Abstand zwischen den Spalten (2% der Textbreite)
+%\end{minipage}
 \endgroup
 
 \lfoot{
