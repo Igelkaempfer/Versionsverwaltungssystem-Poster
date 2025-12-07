@@ -33,7 +33,7 @@
 
 \usepackage{graphicx} % support the \includegraphics command and options
 \usepackage[font={large,sf}]{caption}
-\renewcommand{\figurename}{Abb.}
+\renewcommand{\figurename}{ }
 % \usepackage[parfill]{parskip} % Activate to begin paragraphs with an empty line rather than an indent
 
 %%% PACKAGES
@@ -112,17 +112,46 @@ Projektbetreuer*innen: \\Michael Höding, Ralf Teusner
 \large
 \begin{minipage}[t]{0.32\textwidth}
 %% Inhalt der ersten Spalte hier einfügen
-\section{Das Projektstudium in 
-der WI, dem tollsten Jahrgang aller Zeiten}
-Das Projektstudium Wirtschaftsinformatik wird im ersten Studienjahr angeboten.
-Es dient sowohl der Vermittlung fachlicher als auch überfachlicher Kompetenzen. 
-% ... (Weitere Inhalte, die nur in die erste Spalte passen sollen) ...
-Zum anderen werden durch Gruppenarbeit Fähigkeiten wie Kooperation und Kommunikation, Zeitmanagement und  Projektorganisation entwickelt.
+\section{Unser Projektstudium} 
+Das Projektstudium in 
+Versionskontrollsysteme helfen dabei, Veränderungen im Code zu erkennen, frühere Versionen zurückzuholen und gleichzeitige Arbeiten übersichtlich zu organisieren. Dadurch wird ersichtlich, wer was geändert hat, Fehler lassen sich einfacher finden und das Projekt bleibt auch später noch gut bearbeitbar. Vor allem bei gemeinsamer Arbeit stellen sie sicher, dass alle Schritte dokumentiert sind, sodass niemand ratlos vor den Anpassungen steht. 
+
+Dieses Grundprinzip wird im Pro Buch prägnant beschrieben: 
+„Versionsverwaltung ist ein System, das die Änderungen an einer oder einer Reihe von Dateien über die Zeit hinweg protokolliert, sodass man später auf eine bestimmte Version zurückgreifen kann.“ 
+Damit wird deutlich, dass VCS nicht nur Speicherwerkzeuge sind, sondern ein wesentliches Element für Qualitätssicherung und effiziente Zusammenarbeit.
+\vspace{1cm}
+\section{Zentralisierte Systeme}
+Zentrale Systeme – zum Beispiel Subversion – arbeiten mit einem einzigen Haupt-Speicherort, zu dem jeder Entwickler eine Verbindung braucht. 
+\vspace{1cm}
+\subsection{Vorteile und Nachteile}
+\includegraphics[height=80mm, width=1.0\textwidth, keepaspectratio=false]{Erste Tabelle}
+\vspace{1cm}
+\section{Verteilte Systeme}
+DVCS speichern das komplette Repository lokal bei jedem Nutzer. 
+„In einem DVCS … erhält jeder Anwender nicht einfach nur den jeweils letzten Zustand des Projektes von einem Server: Er erhält stattdessen eine vollständige Kopie des Repositories.“ 
+Dadurch entstehen flinke Prozesse, zuverlässige Systeme und team über greifende Arbeitsweisen.
+\vspace{1cm}
+\subsection{Vorteile von verteilten Systemen}
+\includegraphics[height=80mm, width=1.0\textwidth, keepaspectratio=false]{Tabelle2.jpg}
+%\section{Architekturvergleich}
+%\includegraphics[height=80mm, width=1.0\textwidth, keepaspectratio=false]{Tabelle2.jpg}
 \end{minipage}%
 \hspace{0.02\textwidth}% Ein kleiner horizontaler Abstand zwischen den Spalten (2% der Textbreite)
 \begin{minipage}[t]{0.32\textwidth}
-
 %Platz für erste LeitFrage
+\section{Konsequenzen für Arbeitsprozesse}
+Zentrale Systeme brauchen häufiger Absprachen als schrittweise Prozesse. 
+DVCS machen es möglich, gleichzeitig Zweige zu nutzen, Änderungen lokal abzulegen oder unterschiedliche Methoden zur Zusammenführung einzusetzen. 
+\vspace{1cm}
+\section{Technische Unterschiede}
+Zentralisierte Systeme speichern Bearbeitungen hintereinander – also als einfache Liste. Im Gegensatz dazu greift Git auf einen gerichteten, nichtzyklischen Graphen zurück, weil er gleichzeitige Entwicklungsstränge effizienter darstellen kann.
+Zweige wiegen kaum etwas, weil sie lediglich auf eine Version verweisen. Durch diesen Aufbau funktioniert die getrennte Bearbeitung besser – gleichzeitig bleibt die Integration später einfach. Die Unterlagen erläutern das anschaulich.
+„Branching ist ein zentraler Bestandteil von Git, der besonders einfach und schnell funktioniert.“
+Diese Bauweise erlaubt anpassbare Abläufe, rasche lokale Schritte oder eine klare Trennung unterschiedlicher Entwicklungslinien.
+Branching ist ein zentraler Bestandteil von Git, der besonders einfach und schnell funktioniert.
+\vspace{1cm}
+\section{Architekturvergleich}
+\includegraphics[height=80mm, width=1.0\textwidth, keepaspectratio=false]{Tabelle2.jpg}
 \section{GIT und Branching-Strategien}
 %Branching-Strategien definieren strukturierte Vorgehensweisen zur Erstellung, Pflege und %Zusammenführung paralleler Entwicklungszweige in Versionsverwaltungssystemen.
 %Sie steuern, wie Teams neue Features entwickeln, Fehler beheben oder Releases vorbereiten, %ohne Code-Stabilität zu gefährden.
@@ -135,21 +164,22 @@ Trunk-Based Development ist ein agiler Ansatz, bei dem alle Entwickler kontinuie
 und die Software stets in einem lauffähigen Zustand gehalten wird. Feature-Flags ermöglichen das schrittweise Aktivieren neuer Funktionen.
 Dieser Ansatz fördert schnelle Feedbackzyklen, höhere Codequalität und eine stabilere Release-Pipeline.
 \includegraphics[height=70mm, width=1.0\textwidth, keepaspectratio=false]{Trunk-Based-Development}
+%\subsection{Feature Branching}
+%Feature Branching ist eine gängige Strategie in der %Versionskontrolle (z.B. Git), 
+%bei der Entwickler für jede neue Funktion, Fehlerbehebung %oder jedes Experiment einen separaten Branch von der Hauptentwicklungslinie erstellen. 
+%Dadurch wird die Isolation des Codes gewährleistet. Die %Arbeit kann unabhängig und ohne Risiko, die stabile Hauptversion zu beeinträchtigen, durchgeführt werden.
+%Erst nach Fertigstellung und erfolgreicher Überprüfung wird der Feature Branch wieder in den Main Branch zusammengeführt.
+%\includegraphics[height=60mm, width=1.1\textwidth, keepaspectratio=false]{feature-branched-development}
+\end{minipage}
+\hspace{0.02\textwidth}% Ein kleiner horizontaler Abstand zwischen den Spalten (2% der Textbreite)
+\begin{minipage}[t]{0.32\textwidth}
+%% Inhalt der dritten Spalte hier einfügen
 \subsection{Feature Branching}
 Feature Branching ist eine gängige Strategie in der Versionskontrolle (z.B. Git), 
 bei der Entwickler für jede neue Funktion, Fehlerbehebung oder jedes Experiment einen separaten Branch von der Hauptentwicklungslinie erstellen. 
 Dadurch wird die Isolation des Codes gewährleistet. Die Arbeit kann unabhängig und ohne Risiko, die stabile Hauptversion zu beeinträchtigen, durchgeführt werden.
 Erst nach Fertigstellung und erfolgreicher Überprüfung wird der Feature Branch wieder in den Main Branch zusammengeführt.
-\includegraphics[height=130mm, width=1.1\textwidth, keepaspectratio=false]{feature-branched-development}
-\end{minipage}
-\hspace{0.02\textwidth}% Ein kleiner horizontaler Abstand zwischen den Spalten (2% der Textbreite)
-\begin{minipage}[t]{0.32\textwidth}
-%% Inhalt der dritten Spalte hier einfügen
-%\section{Feature Branching}
-%Feature Branching ist eine gängige Strategie in der Versionskontrolle (z.B. Git), 
-%bei der Entwickler für jede neue Funktion, Fehlerbehebung oder jedes Experiment einen separaten Branch von %der Hauptentwicklungslinie erstellen. 
-%Dadurch wird die Isolation des Codes gewährleistet. Die Arbeit kann unabhängig und ohne Risiko, die %stabile Hauptversion zu beeinträchtigen, durchgeführt werden.
-%Erst nach Fertigstellung und erfolgreicher Überprüfung wird der Feature Branch wieder in den Main Branch %zusammengeführt.
+\includegraphics[height=60mm, width=1.1\textwidth, keepaspectratio=false]{feature-branched-development}
 \subsection{Forking Workflow}
 Der Forking-Workflow unterscheidet sich fundamental von anderen Arbeitsweisen, da er keine Schreibrechte für alle Entwickler auf einem zentralen Repository voraussetzt.
 Stattdessen erstellt jeder Beteiligte eine serverseitige Kopie (Fork) des Projekts. Dieses Modell hat sich als De-facto-Standard in der Open-Source-Entwicklung etabliert,
@@ -157,12 +187,13 @@ da es eine sichere Zusammenarbeit ohne zentrale Verwaltung von Zugriffsrechten e
 Dabei fungieren eine oder mehrere vertrauenswürdige Personen (Maintainer) als „Gatekeeper“. Nur sie besitzen die Berechtigung,
 Änderungen in das offizielle Hauptrepository zu integrieren, wodurch eine klare Hierarchie und Qualitätssicherung gewährleistet wird.
 \includegraphics[height=110mm, width=1.0\textwidth, keepaspectratio=false]{github1}
+%\vspace{1cm}
 \section{Wie beeinflussen unterschiedliche Branching-Strategien die Softwarequalität?}
 \noindent
 \begin{minipage}[h]{\textwidth} % Beachten Sie, dass \textwidth hier 0.32\textwidth entspricht
  \centering
 \end{minipage}
- \includegraphics[height=190mm, width=1.0\textwidth, keepaspectratio=false] {Tabelle}
+ \includegraphics[height=80mm, width=1.0\textwidth, keepaspectratio=false] {LetzteTabelle}
 \end{minipage}
 %\vspace{8cm} % Füge denselben Abstand wie vor der dritten Spalte ein, um sicherzustellen, dass die minipages auf derselben vertikalen Höhe beginnen. Du musst diesen Wert eventuell anpassen.
 \hspace{0.34\textwidth} % Dies springt über die erste Spalte (0.32\textwidth) plus den ersten Abstand (0.02\textwidth) hinweg.
@@ -193,12 +224,26 @@ Ihr Kontakt: Prof. Dr. Michael Höding \\
 TH Brandenburg, Postfach 2132\\
 D-14737 Brandenburg, Germany\\E-Mail: \texttt{hoeding@th-brandenburg.de}
 \end{minipage}
-\begin{minipage}[b]{13 cm}
-.
+}
+\cfoot{%
+\makebox[0pt][l]{% 0pt-Breite Box, Inhalt wird überlappt
+\hspace*{10cm}% <- negative Zahl verschiebt nach links, Anpassung nach Bedarf
+\raisebox{-6cm}{% <- negative Zahl verschiebt nach unten
+\begin{minipage}[b]{40cm}
+\sffamily\fontsize{50}{50}\selectfont
+Referenzen ->\\
+\end{minipage}%
+}%
+}%
+}
+\rfoot{
+\raisebox{-4cm}{
+\begin{minipage}[h]{54cm}
+\hspace{40cm}
+ \centering
+\includegraphics[height=150pt]{QR_Code_references.jpg}
+%\captionof{figurine}{Referenzen}
 \end{minipage}
-\begin{minipage}[b]{15 cm}
-\sffamily\fontsize{20}{10}\selectfont
-.der zweite Punkt
-\end{minipage}
+}
 }
 \end{document}
