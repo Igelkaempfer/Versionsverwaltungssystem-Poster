@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.12.4)  7 DEC 2025 14:57
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.12.4)  7 DEC 2025 23:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -564,147 +564,204 @@ Underfull \hbox (badness 10000) in paragraph at lines 97--101
 
  []
 
+
+Underfull \hbox (badness 7685) in paragraph at lines 116--118
+\T1/lmss/m/n/22 Das Pro-jek-t-studium in Ver-sion-skon-troll-sys-teme
+ []
+
 ! Undefined control sequence.
 <argument> \sffamily \normal 
                              \bfseries 
-l.132 \subsection{Trunk-Based Development}
+l.126 \subsection{Vorteile und Nachteile}
+                                         
+? 
+<Erste Tabelle.jpg, id=2, 297.2706pt x 117.0774pt>
+File: Erste Tabelle.jpg Graphic file (type jpg)
+<use Erste Tabelle.jpg>
+Package pdftex.def Info: Erste Tabelle.jpg  used on input line 127.
+(pdftex.def)             Requested size: 448.3633pt x 227.64972pt.
+! Undefined control sequence.
+<argument> \sffamily \normal 
+                             \bfseries 
+l.134 ...section{Vorteile von verteilten Systemen}
+                                                  
+? 
+<Tabelle2.jpg, id=3, 415.7934pt x 137.313pt>
+File: Tabelle2.jpg Graphic file (type jpg)
+<use Tabelle2.jpg>
+Package pdftex.def Info: Tabelle2.jpg  used on input line 135.
+(pdftex.def)             Requested size: 448.34593pt x 227.62102pt.
+
+Underfull \hbox (badness 1406) in paragraph at lines 143--146
+\T1/lmss/m/n/22 Zentrale Sys-teme brauchen häu-figer Ab-sprachen
+ []
+
+
+Underfull \hbox (badness 3009) in paragraph at lines 143--146
+\T1/lmss/m/n/22 als schrit-tweise Prozesse. DVCS machen es
+ []
+
+File: Tabelle2.jpg Graphic file (type jpg)
+<use Tabelle2.jpg>
+Package pdftex.def Info: Tabelle2.jpg  used on input line 154.
+(pdftex.def)             Requested size: 448.34593pt x 227.62102pt.
+! Undefined control sequence.
+<argument> \sffamily \normal 
+                             \bfseries 
+l.161 \subsection{Trunk-Based Development}
                                           
 ? 
-<Trunk-Based-Development.jpg, id=2, 1003.75pt x 501.875pt>
+<Trunk-Based-Development.jpg, id=4, 752.8125pt x 204.01219pt>
 File: Trunk-Based-Development.jpg Graphic file (type jpg)
 <use Trunk-Based-Development.jpg>
-Package pdftex.def Info: Trunk-Based-Development.jpg  used on input line 137.
-(pdftex.def)             Requested size: 448.34445pt x 199.16888pt.
+Package pdftex.def Info: Trunk-Based-Development.jpg  used on input line 166.
+(pdftex.def)             Requested size: 448.34827pt x 199.18034pt.
 
-Underfull \hbox (badness 1603) in paragraph at lines 133--138
+Underfull \hbox (badness 1603) in paragraph at lines 162--173
 \T1/lmss/m/n/22 bei dem alle En-twick-ler kon-tinuier-lich in einen
  []
 
 
-Underfull \hbox (badness 2426) in paragraph at lines 133--138
+Underfull \hbox (badness 2426) in paragraph at lines 162--173
 \T1/lmss/m/n/22 gemein-samen Hauptzweig (^^RTrunk^^P) in-te-gri-eren.
  []
 
 
-Underfull \hbox (badness 1975) in paragraph at lines 133--138
+Underfull \hbox (badness 1975) in paragraph at lines 162--173
 \T1/lmss/m/n/22 gehal-ten wird. Feature-Flags er-möglichen das
  []
 
 
-Underfull \hbox (badness 2318) in paragraph at lines 133--138
+Underfull \hbox (badness 2318) in paragraph at lines 162--173
 \T1/lmss/m/n/22 Ansatz fördert schnelle Feed-back-zyklen, höhere
  []
 
 ! Undefined control sequence.
 <argument> \sffamily \normal 
                              \bfseries 
-l.138 \subsection{Feature Branching}
+l.177 \subsection{Feature Branching}
                                     
 ? 
-<feature-branched-development.png, id=3, 2006.49625pt x 1124.2pt>
+<feature-branched-development.png, id=5, 2006.49625pt x 1124.2pt>
 File: feature-branched-development.png Graphic file (type png)
 <use feature-branched-development.png>
 Package pdftex.def Info: feature-branched-development.png  used on input line 1
-43.
-(pdftex.def)             Requested size: 493.17265pt x 369.87215pt.
+82.
+(pdftex.def)             Requested size: 493.17265pt x 170.7155pt.
 
-Underfull \hbox (badness 1460) in paragraph at lines 139--144
+Underfull \hbox (badness 1460) in paragraph at lines 178--183
 \T1/lmss/m/n/22 Haupten-twick-lungslinie er-stellen. Dadurch wird
  []
 
 
-Underfull \hbox (badness 1939) in paragraph at lines 139--144
+Underfull \hbox (badness 1939) in paragraph at lines 178--183
 \T1/lmss/m/n/22 kann un-ab-hängig und ohne Risiko, die sta-bile
  []
 
 
-Underfull \hbox (badness 7667) in paragraph at lines 139--144
+Underfull \hbox (badness 7667) in paragraph at lines 178--183
 \T1/lmss/m/n/22 Hauptver-sion zu beein-trächti-gen, durchge-führt
  []
 
 
-Underfull \hbox (badness 3312) in paragraph at lines 139--144
+Underfull \hbox (badness 3312) in paragraph at lines 178--183
 \T1/lmss/m/n/22 wer-den. Erst nach Fer-tig-stel-lung und er-fol-
  []
 
 
-Underfull \hbox (badness 2359) in paragraph at lines 139--144
+Underfull \hbox (badness 2359) in paragraph at lines 178--183
 \T1/lmss/m/n/22 gre-icher Über-prü-fung wird der Fea-ture Branch
  []
 
 
-Underfull \hbox (badness 2512) in paragraph at lines 139--144
+Underfull \hbox (badness 2512) in paragraph at lines 178--183
 \T1/lmss/m/n/22 wieder in den Main Branch zusam-menge-führt.
  []
 
 
-Overfull \hbox (44.83801pt too wide) in paragraph at lines 139--144
+Overfull \hbox (44.83801pt too wide) in paragraph at lines 178--183
 [] 
  []
 
 ! Undefined control sequence.
 <argument> \sffamily \normal 
                              \bfseries 
-l.153 \subsection{Forking Workflow}
+l.183 \subsection{Forking Workflow}
                                    
 ? 
-<github1.png, id=5, 567.11874pt x 356.33125pt>
+<github1.png, id=7, 567.11874pt x 356.33125pt>
 File: github1.png Graphic file (type png)
 <use github1.png>
-Package pdftex.def Info: github1.png  used on input line 159.
+Package pdftex.def Info: github1.png  used on input line 189.
 (pdftex.def)             Requested size: 448.34773pt x 312.99068pt.
 
-Underfull \hbox (badness 1789) in paragraph at lines 154--160
+Underfull \hbox (badness 1789) in paragraph at lines 184--191
 \T1/lmss/m/n/22 Der Forking-Workflow un-ter-schei-det sich fun-da-
  []
 
 
-Underfull \hbox (badness 1087) in paragraph at lines 154--160
+Underfull \hbox (badness 1087) in paragraph at lines 184--191
 \T1/lmss/m/n/22 men-tal von an-deren Ar-beitsweisen, da er keine
  []
 
 
-Underfull \hbox (badness 4001) in paragraph at lines 154--160
+Underfull \hbox (badness 4001) in paragraph at lines 184--191
 \T1/lmss/m/n/22 eine oder mehrere ver-trauenswürdige Per-so-nen
  []
 
-LaTeX Font Info:    Calculating math sizes for size <22> on input line 164.
+LaTeX Font Info:    Calculating math sizes for size <22> on input line 195.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <22> on input line 164.
+(Font)              <22> on input line 195.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <15.39993> on input line 164.
+(Font)              <15.39993> on input line 195.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <11> on input line 164.
-<Tabelle.jpg, id=6, 442.7742pt x 425.9112pt>
-File: Tabelle.jpg Graphic file (type jpg)
-<use Tabelle.jpg>
-Package pdftex.def Info: Tabelle.jpg  used on input line 165.
-(pdftex.def)             Requested size: 448.35371pt x 540.64124pt.
+(Font)              <11> on input line 195.
+<LetzteTabelle.jpg, id=8, 446.6286pt x 326.1786pt>
+File: LetzteTabelle.jpg Graphic file (type jpg)
+<use LetzteTabelle.jpg>
+Package pdftex.def Info: LetzteTabelle.jpg  used on input line 196.
+(pdftex.def)             Requested size: 448.33124pt x 227.62169pt.
 
-Overfull \hbox (4.6165pt too wide) in paragraph at lines 161--166
+Overfull \hbox (4.59402pt too wide) in paragraph at lines 192--197
 $[]$ [] 
  []
 
 
-Overfull \hbox (22.26495pt too wide) in paragraph at lines 113--176
+Overfull \hbox (22.26495pt too wide) in paragraph at lines 113--207
 [][] []  []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 113--176
+Underfull \hbox (badness 10000) in paragraph at lines 113--207
 
  []
 
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 2
-04.
+49.
 (C:\Users\Andre\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) [1
+)
+Underfull \hbox (badness 10000) has occurred while \output is active
+
+ []
+
+<QR_Code_references.jpg, id=9, 718.18312pt x 720.44156pt>
+File: QR_Code_references.jpg Graphic file (type jpg)
+<use QR_Code_references.jpg>
+Package pdftex.def Info: QR_Code_references.jpg  used on input line 249.
+(pdftex.def)             Requested size: 149.52979pt x 150.0pt.
+
+Overfull \hbox (143.26833pt too wide) has occurred while \output is active
+ [][]
+ []
+
+[1
 
 {C:/Users/Andre/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/Andr
 e/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc} <./2015_10_05_THB
-_FB-W_Logo_RGB.jpg> <./Trunk-Based-Development.jpg> <./feature-branched-develop
-ment.png> <./github1.png> <./Tabelle.jpg>]
+_FB-W_Logo_RGB.jpg> <./Erste Tabelle.jpg> <./Tabelle2.jpg> <./Trunk-Based-Devel
+opment.jpg> <./feature-branched-development.png> <./github1.png> <./LetzteTabel
+le.jpg> <./QR_Code_references.jpg>]
 (Versionsverwaltung_im_Softwareengineering.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
@@ -712,24 +769,23 @@ L3 programming layer <2024-01-04>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 6652 strings out of 474486
- 116299 string characters out of 5743755
- 1936542 words of memory out of 5000000
- 28834 multiletter control sequences out of 15000+600000
+ 6680 strings out of 474486
+ 117023 string characters out of 5743755
+ 1945542 words of memory out of 5000000
+ 28862 multiletter control sequences out of 15000+600000
  619885 words of font info for 71 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 58i,12n,65p,289b,546s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/Andre/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb
-><C:/Users/Andre/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr17.pfb>
-<C:/Users/Andre/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri12.pfb>
-<C:/Users/Andre/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss17.pfb>
-<C:/Users/Andre/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbx10.pf
-b><C:/Users/Andre/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt12.pf
-b>
-Output written on Versionsverwaltung_im_Softwareengineering.pdf (1 page, 100761
-5 bytes).
+ 58i,17n,65p,507b,546s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/Andre/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr17.pfb
+><C:/Users/Andre/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri12.pfb
+><C:/Users/Andre/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss17.pfb
+><C:/Users/Andre/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbx10.p
+fb><C:/Users/Andre/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt12.p
+fb>
+Output written on Versionsverwaltung_im_Softwareengineering.pdf (1 page, 808071
+ bytes).
 PDF statistics:
- 45 PDF objects out of 1000 (max. 8388607)
+ 43 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 26 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 41 words of extra memory for PDF output out of 10000 (max. 10000000)
 
