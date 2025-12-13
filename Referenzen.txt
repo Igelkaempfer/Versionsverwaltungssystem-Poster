@@ -1,0 +1,10 @@
+[1] Chacon & Straub, 2014, https://git-scm.com/book/en/v2
+[2] Apache Subversion: https://subversion.apache.org/
+[3] Chacon & Straub, 2014, https://git-scm.com/book/en/v2/Getting-Started-Distributed-Version-Control
+[4] https://docs.gitlab.com/ee/topics/git/ 
+[5] Chacon & Straub, 2014, https://git-scm.com/book/en/v2/Git-Branching-Branches-auf-einen-Blick
+[6] 
+[7] https://www.geeksforgeeks.org/devops/trunk-based-development-in-software-development/
+[8] Bjørn Stachmann und René Preißel - Git: Dezentrale Versionsverwaltung im Team: Grundlagen und Workflows
+[9] https://www.optimizely.com/de/optimization-glossary/trunk-based-development/
+[10] Nina Siessegger - Git kurz & gut, 2022
