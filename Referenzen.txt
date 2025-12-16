@@ -1,10 +1,14 @@
-[1] Chacon & Straub, 2014, https://git-scm.com/book/en/v2
-[2] Apache Subversion: https://subversion.apache.org/
-[3] Chacon & Straub, 2014, https://git-scm.com/book/en/v2/Getting-Started-Distributed-Version-Control
-[4] https://docs.gitlab.com/ee/topics/git/ 
-[5] Chacon & Straub, 2014, https://git-scm.com/book/en/v2/Git-Branching-Branches-auf-einen-Blick
-[6] 
-[7] https://www.geeksforgeeks.org/devops/trunk-based-development-in-software-development/
-[8] Bjørn Stachmann und René Preißel - Git: Dezentrale Versionsverwaltung im Team: Grundlagen und Workflows
-[9] https://www.optimizely.com/de/optimization-glossary/trunk-based-development/
-[10] Nina Siessegger - Git kurz & gut, 2022
+[1] Chacon & Straub, 2014, Pro Git, Kapitel 1.1
+[2] Chacon & Straub, 2014, https://git-scm.com/book/en/v2
+[3] Apache Subversion: https://subversion.apache.org/
+[4] Chacon & Straub, 2014, https://git-scm.com/book/en/v2/Getting-Started-Distributed-Version-Control
+[5] Eigene Übersetzung nach Chacon & Straub, 2014, Pro Git, Kapitel 1, Abschnitt „Was ist Versionsverwaltung?“
+[6] https://docs.gitlab.com/ee/topics/git/
+[7] Chacon, S., & Straub, B. (2014). Pro Git (2. Aufl.). Apress. Kapitel 3.1: Git Branching – Branches in a Nutshell. https://git-scm.com/book/en/v2/GitBranchingBranchesinaNutshell
+[8] Chacon & Straub, 2014, https://git-scm.com/book/en/v2/Git-Branching-Branches-auf-einen-Blick
+[9] https://www.atlassian.com/de/continuous-delivery/continuous-integration/trunk-based-development
+[10] https://www.geeksforgeeks.org/devops/trunk-based-development-in-software-development/
+[11] Bjørn Stachmann und René Preißel - Git: Dezentrale Versionsverwaltung im Team: Grundlagen und
+Workflows
+[12] https://www.optimizely.com/de/optimization-glossary/trunk-based-development/
+[13] Nina Siessegger - Git kurz & gut, 2022
